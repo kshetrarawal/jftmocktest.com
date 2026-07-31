@@ -1,0 +1,14 @@
+# Cloudflare Pages — Cache Headers
+
+/index.html
+  Cache-Control: no-store, no-cache, must-revalidate
+  Content-Type: text/html; charset=utf-8
+
+/mocktests/*
+  Cache-Control: public, max-age=86400
+  Content-Type: text/html; charset=utf-8
+  X-Frame-Options: SAMEORIGIN
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN

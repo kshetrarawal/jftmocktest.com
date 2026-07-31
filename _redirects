@@ -1,0 +1,6 @@
+# Cloudflare Pages — Routing Rules
+# Mock test files serve directly (no redirect)
+/mocktests/*   /mocktests/:splat   200
+
+# Any other unknown URL → homepage
+/*             /index.html         200
